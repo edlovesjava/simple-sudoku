@@ -1,0 +1,92 @@
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  border: 1px solid #b0bec5;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s;
+  text-align: center;
+  padding: 0;
+  background: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.cell.boxBorderRight {
+  border-right: 2px solid #546e7a;
+}
+
+.cell.boxBorderBottom {
+  border-bottom: 2px solid #546e7a;
+}
+
+.cell.original {
+  font-weight: 700;
+  color: #1a237e;
+  background-color: #e8eaf6;
+}
+
+.cell.editable {
+  color: #1565c0;
+  background-color: #fff;
+}
+
+.cell.editable:hover {
+  background-color: #e3f2fd;
+}
+
+.cell.selected {
+  background-color: #bbdefb !important;
+  outline: 2px solid #1976d2;
+  outline-offset: -2px;
+  z-index: 1;
+}
+
+.cell.error {
+  color: #c62828 !important;
+  background-color: #ffebee !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cell {
+    border-color: #455a64;
+  }
+
+  .cell.boxBorderRight {
+    border-right-color: #90a4ae;
+  }
+
+  .cell.boxBorderBottom {
+    border-bottom-color: #90a4ae;
+  }
+
+  .cell.original {
+    color: #e8eaf6;
+    background-color: #1a237e;
+  }
+
+  .cell.editable {
+    color: #90caf9;
+    background-color: #1e2a3a;
+  }
+
+  .cell.editable:hover {
+    background-color: #1e3a5f;
+  }
+
+  .cell.selected {
+    background-color: #1565c0 !important;
+    outline-color: #90caf9;
+  }
+
+  .cell.error {
+    color: #ef9a9a !important;
+    background-color: #4a1515 !important;
+  }
+}
