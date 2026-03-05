@@ -1,0 +1,13 @@
+.timer {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: #4a6fa5;
+  letter-spacing: 0.05em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .timer {
+    color: #7eb8f7;
+  }
+}
